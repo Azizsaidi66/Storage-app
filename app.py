@@ -5,9 +5,9 @@ from azure.storage.blob import BlobServiceClient
 from io import BytesIO
 
 app = Flask(__name__)
-app.secret_key = "keyazHKFHHhhklcfd46zefZD6D4Qpkfpz"
+app.secret_key = ""
 
-conn_key = "Driver=ODBC Driver 17 for SQL Server;Server=tcp:storage-app-server.database.windows.net,1433;DATABASE=storage-app-db;Initial Catalog=storage-app-db;Persist Security Info=False;Uid=azizsaidi66server;Pwd=Azizalaasaidi66;MultipleActiveResultSets=False;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+conn_key = ""
 
 conn = pyodbc.connect(conn_key)
 cursor = conn.cursor()
